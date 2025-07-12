@@ -1,0 +1,108 @@
+
+.gradient-bg {
+    background: linear-gradient(135deg, #6b0f1a, #b91372); /* deep rose to magenta */
+}
+
+
+.fade-in {
+    animation: fadeIn 1s ease-in-out;
+}
+@keyframes fadeIn {
+    0% { opacity: 0; transform: translateY(20px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+
+.hover-scale {
+    transition: transform 0.3s ease;
+}
+.hover-scale:hover {
+    transform: scale(1.05);
+}
+
+
+.skill-bar {
+    height: 20px;
+    background-color: #fab6dd; 
+    border-radius: 10px;
+    overflow: hidden;
+    margin-top: 5px;
+}
+
+
+.skill-progress {
+    height: 100%;
+    background: linear-gradient(90deg, #be185d, #db2777); 
+    border-radius: 10px;
+    transition: width 1.5s ease-in-out;
+    text-align: right;
+    color: #fab6dd;
+    font-size: 12px;
+    padding-right: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.skill-item:hover .skill-progress {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+@media (max-width: 640px) {
+    .hero-text { font-size: 2.5rem; }
+    .flex-col { flex-direction: column; }
+    .nav-links { display: none; }
+    .nav-links.active { display: flex; flex-direction: column; }
+}
+@media (max-width: 768px) {
+    .about-content { flex-direction: column; }
+}
+
+
+.fa-icon {
+    transition: color 0.3s ease, transform 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.footer-social a .fa-icon {
+    font-size: 1.5rem;
+    color: #fab6dd;
+}
+.footer-social a:hover .fa-icon {
+    color: #f9a8d4; 
+    transform: scale(1.2);
+}
+
+
+.nav-toggle .fa-icon {
+    font-size: 1.5rem;
+    color: #fab6dd;
+}
+.nav-toggle:hover .fa-icon {
+    color: #f9a8d4;
+    transform: rotate(90deg);
+}
+
+
+.contact-social .fa-icon {
+    font-size: 2rem;
+    color: #9d174d; 
+}
+.contact-social a:hover .fa-icon {
+    color: #c084fc; 
+    transform: scale(1.1);
+}
+
+
+@media (max-width: 640px) {
+    .footer-social .fa-icon {
+        font-size: 1.2rem;
+    }
+    .contact-social .fa-icon {
+        font-size: 1.5rem;
+    }
+    .nav-toggle .fa-icon {
+        font-size: 1.2rem;
+    }
+}
