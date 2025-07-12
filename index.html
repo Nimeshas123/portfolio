@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="script.js"></script>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body class="bg-gray-50 font-sans">
+
+<header>
+  <nav class="gradient-bg text-white p-4 sticky top-0 z-10 shadow-lg">
+    <div class="container mx-auto flex justify-between items-center">
+      <div class="text-2xl font-bold">Nimesha Yasangi</div>
+      <button class="nav-toggle md:hidden focus:outline-none" onclick="toggleMenu()">
+        <i class="fas fa-bars fa-icon"></i>
+      </button>
+      <div class="nav-links hidden md:flex gap-6">
+        <a href="#home" class="hover:text-gray-200 transition">Home</a>
+        <a href="#about" class="hover:text-gray-200 transition">About</a>
+        <a href="#skills" class="hover:text-gray-200 transition">Skills</a>
+        <a href="#projects" class="hover:text-gray-200 transition">Projects</a>
+        <a href="#contact" class="hover:text-gray-200 transition">Contact</a>
+      </div>
+    </div>
+  </nav>
+</header>
+
+  <section id="home" class="gradient-bg text-white py-24">
+    <div class="container mx-auto text-center fade-in">
+      <h1 class="hero-text text-5xl font-extrabold mb-4"><i>Hi, I'm Nimesha Yasangi Ranasinghe</i></h1>
+      <p class="text-xl mb-6 opacity-90"><i>CS Undergraduate Student</i></p>
+    </div>
+  </section>
+
+<section id="about" class="py-20 bg-white">
+  <div class="container mx-auto px-4">
+    <h2 class="text-4xl font-bold text-center mb-12 text-gray-800">About Me</h2>
+    
+    <div class="about-content flex flex-col md:flex-row gap-12 items-center fade-in">
+      
+      
+      <div class="w-48 rounded-lg overflow-hidden shadow-lg flex-shrink-0">
+  <img src="professionalimage.jpg" alt="Nimesha Yasangi Ranasinghe" class="w-full h-auto object-cover">
+</div>
+        <div class="text-lg text-gray-700">
+          <p class="mb-4">
+            I'm Nimesha Yasangi Ranasinghe — an aspiring software developer and a passionate Computer Science undergraduate at the University of Sri Jayewardenepura. My journey into tech began with a simple question: <em>“how do things work behind the screen?”</em> That curiosity has now become my career path.
+          </p>
+          <p class="mb-4">
+            I enjoy building user-friendly, scalable web applications, learning new frameworks, and solving real-world problems through code. My academic background is complemented by hands-on experience managing group projects, learning both front-end and back-end development, and exploring fields like UI/UX and data handling.
+          </p>
+          <p class="mb-4">
+            Outside of tech, I'm a competitive badminton player and enjoy activities that build both discipline and creativity. My future goal is to grow into a full-stack developer who not only writes efficient code but also builds solutions that create real impact.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+    
+    <section id="skills" class="py-20 bg-pink-100">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-bold text-center mb-12 text-gray-800">Skills</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="skill-item bg-white p-6 rounded-lg shadow-md hover-scale">
+                    <h3 class="text-lg font-semibold mb-2">Programming Languages</h3>
+                    <p>HTML5 <span class="skill-bar"><span class="skill-progress" style="width: 85%;">85%</span></span></p>
+                    <p>CSS <span class="skill-bar"><span class="skill-progress" style="width: 80%;">70%</span></span></p>
+                    <p>JavaScript <span class="skill-bar"><span class="skill-progress" style="width: 75%;">65%</span></span></p>
+                    <p>Python <span class="skill-bar"><span class="skill-progress" style="width: 80%;">40%</span></span></p>
+                     <p>C++ <span class="skill-bar"><span class="skill-progress" style="width: 60%;">70%</span></span></p>
+                </div>
+                <div class="skill-item bg-white p-6 rounded-lg shadow-md hover-scale">
+                    <h3 class="text-lg font-semibold mb-2">Frameworks</h3>
+                    <p>React <span class="skill-bar"><span class="skill-progress" style="width: 70%;">30%</span></span></p>
+                    <p>Node.js <span class="skill-bar"><span class="skill-progress" style="width: 65%;">35%</span></span></p>
+                </div>
+                <div class="skill-item bg-white p-6 rounded-lg shadow-md hover-scale">
+                    <h3 class="text-lg font-semibold mb-2">Web Development</h3>
+                    <p>Responsive Design <span class="skill-bar"><span class="skill-progress" style="width: 85%;">85%</span></span></p>
+                    <p>Form Handling <span class="skill-bar"><span class="skill-progress" style="width: 75%;">75%</span></span></p>
+                    <p>DOM Manipulation <span class="skill-bar"><span class="skill-progress" style="width: 70%;">70%</span></span></p>
+                    <p>API Integration <span class="skill-bar"><span class="skill-progress" style="width: 60%;">60%</span></span></p>
+                </div>
+                <div class="skill-item bg-white p-6 rounded-lg shadow-md hover-scale">
+                     <h3 class="text-lg font-semibold mb-2">Communication & Teamwork</h3>
+                     <p>Team Collaboration <span class="skill-bar"><span class="skill-progress" style="width: 85%;">85%</span></span></p>
+                     <p>Presentation Skills <span class="skill-bar"><span class="skill-progress" style="width: 80%;">80%</span></span></p>
+                     <p>Conflict Resolution <span class="skill-bar"><span class="skill-progress" style="width: 70%;">70%</span></span></p>
+                </div>
+                <div class="skill-item bg-white p-6 rounded-lg shadow-md hover-scale">
+                    <h3 class="text-lg font-semibold mb-2">Problem Solving</h3>
+                    <p>Logical Thinking <span class="skill-bar"><span class="skill-progress" style="width: 80%;">80%</span></span></p>
+                    <p>Algorithm Design <span class="skill-bar"><span class="skill-progress" style="width: 65%;">65%</span></span></p>
+                    <p>Debugging <span class="skill-bar"><span class="skill-progress" style="width: 75%;">75%</span></span></p>
+                </div>
+                <div class="skill-item bg-white p-6 rounded-lg shadow-md hover-scale">
+                     <h3 class="text-lg font-semibold mb-2">Personal & Soft Skills</h3>
+                     <p>Time Management <span class="skill-bar"><span class="skill-progress" style="width: 85%;">85%</span></span></p>
+                     <p>Adaptability <span class="skill-bar"><span class="skill-progress" style="width: 80%;">80%</span></span></p>
+                     <p>Creativity <span class="skill-bar"><span class="skill-progress" style="width: 75%;">75%</span></span></p>
+                     <p>Data Entry <span class="skill-bar"><span class="skill-progress" style="width: 90%;">90%</span></span></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <section id="projects" class="py-20 bg-pink-200">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-bold text-center mb-12 text-red-800">Projects</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="project-card bg-gray-50 p-6 rounded-lg shadow-lg hover-scale fade-in">
+                    <h3 class="text-2xl font-bold mb-3 text-gray-800">Statistic Distribution Project</h3>
+                    <p class="mb-4 text-gray-600">A multivariate analysis examining how university students' sleep and study habits impact their academic performance.</p>
+                    <a href="#" class="text-blue-600 hover:underline font-semibold">View</a>
+                </div>
+                <div class="project-card bg-gray-50 p-6 rounded-lg shadow-md hover-scale fade-in">
+                    <h3 class="text-2xl font-bold mb-3 text-gray-800">Web Technology Group Project</h3>
+                    <p class="mb-4 text-gray-600">Student Attendance Tracking Portal - System. </p>
+                    <a href="#" class="text-blue-600 hover:underline font-semibold">View</a>
+
+                </div>
+                <div class="project-card bg-gray-50 p-6 rounded-lg shadow-lg hover-scale fade-in">
+                    <h3 class="text-2xl font-bold mb-3 text-gray-800">Essential Module Group Project</h3>
+                    <p class="mb-4 text-gray-600">Contributed to a key CS module project, focusing on collaborative technical development.</p>
+                    <a href="#" class="text-blue-600 hover:underline font-semibold">View</a>
+                </div>
+                <div class="project-card bg-gray-50 p-6 rounded-lg shadow-lg hover-scale fade-in">
+                    <h3 class="text-2xl font-bold mb-3 text-gray-800">Personal Web Portfolio</h3>
+                    <p class="mb-4 text-gray-600">A responsive portfolio site built with HTML5 and CSS for CCS2023 Assignment 02.</p>
+                    <a href="#" class="text-blue-600 hover:underline font-semibold">View</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+        
+    <section id="extra" class="py-20 bg-pink-100">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-bold text-center mb-12 text-gray-800">Extra-Curricular & Achievements</h2>
+            <div class="flex flex-col md:flex-row gap-12 fade-in">
+                <div class="w-full md:w-1/2">
+                    <h3 class="text-2xl font-bold mb-4 text-gray-700">Extra-Curricular Activities</h3>
+                    <ul class="list-disc pl-5 space-y-2">
+                        <li>Member of University Sports Club  </li>
+                        <li>School Volleyball Team Captain</li>
+                        <li>Participant – All-Island School Games Athletics</li>
+                        <li>School Prefect - Senior Leadership Board (2021-2022)</li>
+                    </ul>
+                </div>
+                <div class="w-full md:w-1/2">
+                    <h3 class="text-2xl font-bold mb-4 text-gray-700">Achievements</h3>
+                    <ul class="list-disc pl-5 space-y-2">
+                        <li>Successfully Completed Google Project Management Course (2024)</li>
+                        <li>English Diploma, Sri Lankan English Language Graduates' Association (2023)</li>
+                        <li>Successfully Leading Developer Role in Essential Module Group Project (2025)</li>
+                        <li>6 Months Work Experience asAccount Assistant (2023-2024)</li>
+                        <li>Planning to pursue a Master’s in Software Development or related field (Post-2027)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="cv" class="py-20 bg-pink-200">
+        <div class="container mx-auto text-center px-4 fade-in">
+            <h2 class="text-4xl font-bold mb-8 text-gray-800">Download My CV</h2>
+            <a href="myCV.pdf" download class="bg-pink-600 text-white px-8 py-3 rounded-full hover:bg-pink-700 hover-scale">Download CV</a>
+        </div>
+    </section>
+
+    <section id="contact" class="py-20 bg-pink-100">
+        <div class="container mx-auto text-center px-4 fade-in">
+            <h2 class="text-4xl font-bold mb-8 text-gray-800">Contact Me</h2>
+            <p class="mb-4 text-lg text-gray-700">Email : nimeshayasangi03@gmail.com</p>
+            <p class="mb-4 text-lg text-gray-700">Phone : +94 764611365</p>
+            <div class="flex justify-center gap-6">
+                <a href="https://linkedin.com" class="hover:text-gray-200 hover-scale"><i class="fab fa-linkedin fa-2x"></i></a>
+                <a href="https://github.com/Nimeshas123" class="hover:text-gray-200 hover-scale"><i class="fab fa-github fa-2x"></i></a>
+            </div>
+        </div>
+    </section>
+
+    
+    <footer class="gradient-bg text-white py-6">
+        <div class="container mx-auto text-center">
+            <p class="text-sm">© 2025 NIMESHA. All rights reserved.</p>
+        </div>
+        <div class="flex justify-center gap-6 mt-2">
+                <a href="https://facebook.com" class="hover:text-gray-200 hover-scale"><i class="fab fa-facebook fa-lg"></i></a>
+                <a href="https://twitter.com" class="hover:text-gray-200 hover-scale"><i class="fab fa-twitter fa-lg"></i></a>
+                <a href="https://insagram.com" class="hover:text-gray-200 hover-scale"><i class="fab fa-instagram fa-lg"></i></a>
+            </div>
+    </footer>
+
+
+</body>
+</html>
